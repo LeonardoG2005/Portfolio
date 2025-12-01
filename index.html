@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Leonardo</title>
+    <meta name="description" content="Software Engineering Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar-hero" id="navbarHero">
+        <div class="navbar-hero-profile">
+            <img src="./assets/senku.jpg" alt="Profile" class="navbar-hero-profile-img">
+        </div>
+        
+        <a href="#hero" class="navbar-hero-link">Home</a>
+        <a href="#about" class="navbar-hero-link">Who I Am</a>
+        <a href="#skills" class="navbar-hero-link">What I Can Do</a>
+        <a href="#projects" class="navbar-hero-link">Projects</a>
+        <a href="#other-work" class="navbar-hero-link">Beyond Web</a>
+        
+        <a href="https://www.linkedin.com/in/leotuvstarr/" target="_blank" rel="noopener noreferrer" class="navbar-hero-cta">
+            Let's talk
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </nav>
+
+    <section class="hero-section" id="hero">
+        <div class="hero-rounded-container">
+            <canvas id="gradient-canvas"></canvas>
+            <div class="hero-content-wrapper">
+                <div class="hero-status-badge available">
+                    <span class="status-dot"></span>
+                    Available for work
+                </div>
+                <h1 class="hero-title-large">
+                    Building <span class="hero-highlight">scalable software</span> and modern web applications with a focus on <span class="hero-highlight">backend engineering</span> and data-driven solutions.
+                </h1>
+                <div class="hero-social-buttons">
+                    <a href="https://github.com/LeonardoG2005" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leotuvstarr/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/leo.tuvstarr/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:leonardoguevaraatehortua@gmail.com" class="social-circle-btn" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content-wrapper">
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Who I Am</h2><br><br>
+            
+            <div class="about-text-only" style="text-align: center">
+                <p class="about-paragraph about-greeting">Hi, I'm <span class="name-highlight">Leonardo</span>. A fourth-year Software Engineering student with a strong <strong>backend engineering</strong> focus, building data‑intensive systems and production‑ready, <strong>scalable software</strong>.<br><br>During my university training I have specialize in Object‑Oriented Programming, clean architecture, and infrastructure‑aware development. I follow <strong>Clean Code</strong> principles, apply Design Patterns, and tradeoff‑driven system design. I work with ML tooling and maintain an active <a href="https://github.com/LeonardoG2005" target="_blank" rel="noopener noreferrer">GitHub</a> profile, including production deployments.<br><br>My foundations span <strong>Core CS &amp; Software Engineering</strong> (advanced algorithms, dynamic data structures, systems programming, web &amp; mobile engineering, testing, security), <strong>Mathematics &amp; Problem‑Solving</strong> (Discrete Math, Linear Algebra, calculus), and <strong>Architecture &amp; Infrastructure</strong> (computer architecture, IP networking, DevOps‑aligned delivery). I’ve also developed practical <strong>Project &amp; Product</strong> skills for technical evaluation, software design, and structured delivery cycles.<br><br> I also pursued the full <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener noreferrer">DeepLearning.AI Machine Learning Specialization</a> on <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener noreferrer">Coursera</a> and hold an <a href="https://www.linkedin.com/in/leotuvstarr/details/certifications/1764033906764/single-media-viewer/" target="_blank" rel="noopener noreferrer">IELTS Academic</a> certification validating C1 English proficiency.<br><br> Right now, I’m working with a team on a 2D open‑world multiplayer project in Unity &amp; C#. Our idea is to create a fun environment where players learn languages while we gain experience shipping, deploying, and maintaining a real long-term software project from scratch.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">What I Can Do</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <p class="skill-name">Python</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <p class="skill-name">JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    </div>
+                    <p class="skill-name">CSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    </div>
+                    <p class="skill-name">HTML</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                    </div>
+                    <p class="skill-name">C#</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <p class="skill-name">Java</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular">
+                    </div>
+                    <p class="skill-name">Angular</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" alt="NestJS">
+                    </div>
+                    <p class="skill-name">NestJS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                    </div>
+                    <p class="skill-name">TensorFlow</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
+                    </div>
+                    <p class="skill-name">Google Cloud</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.8 14.4c.5-.3.8-.8.8-1.4 0-1-.8-1.8-1.8-1.8-.5 0-1 .2-1.4.6l-2.6 2.6c-.4.4-.6.9-.6 1.4 0 1 .8 1.8 1.8 1.8.5 0 1-.2 1.4-.6l2.4-2.6zm6.4-9.6c-1-.5-2.2-.3-3 .5l-2.6 2.6c-.4.4-.6.9-.6 1.4 0 1 .8 1.8 1.8 1.8.5 0 1-.2 1.4-.6l2.6-2.6c.8-.8 1-2 .5-3-.1 0-.1-.1-.1-.1zM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
+                        </svg>
+                    </div>
+                    <p class="skill-name">Scikit-Learn</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                    </div>
+                    <p class="skill-name">TypeScript</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                    </div>
+                    <p class="skill-name">NumPy</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                    </div>
+                    <p class="skill-name">Pandas</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter">
+                    </div>
+                    <p class="skill-name">Jupyter</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <p class="skill-name">Git</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </div>
+                    <p class="skill-name">GitHub</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+                    </div>
+                    <p class="skill-name">R</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                    </div>
+                    <p class="skill-name">Flutter</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <p class="skill-name">English C1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Demos desplegados de aplicaciones web completas</p>
+            <div class="projects-gallery">
+                <a href="https://proyecto-demo.com" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/project-1.jpg" alt="Nombre del Proyecto" class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <p>Screenshot del proyecto</p>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">Nombre del Proyecto</h3>
+                        <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </a>
+                <a href="https://proyecto-demo2.com" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/project-2.jpg" alt="Otro Proyecto" class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <p>Screenshot del proyecto</p>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">Otro Proyecto Increíble</h3>
+                        <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/project-3.jpg" alt="Proyecto 3" class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <p>Screenshot del proyecto</p>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">Tercer Proyecto</h3>
+                        <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/project-4.jpg" alt="Proyecto 4" class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <p>Screenshot del proyecto</p>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">Cuarto Proyecto</h3>
+                        <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-work-section" id="other-work">
+        <div class="container">
+            <h2 class="section-title">Beyond Web</h2>
+            <p class="section-subtitle">Otros proyectos y trabajos creativos</p>
+            <div class="other-work-grid">
+                
+                <div class="work-card">
+                    <div class="work-image-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                        <p>Imagen del trabajo</p>
+                    </div>
+                    <h3 class="work-title">Proyecto de Diseño</h3>
+                    <p class="work-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-image-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                        <p>Imagen del trabajo</p>
+                    </div>
+                    <h3 class="work-title">Contribución Open Source</h3>
+                    <p class="work-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-image-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="10 8 16 12 10 16 10 8"/>
+                        </svg>
+                        <p>Imagen del trabajo</p>
+                    </div>
+                    <h3 class="work-title">Contenido Educativo</h3>
+                    <p class="work-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

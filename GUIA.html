@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Personalización - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a; 
+            color: #fff; 
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2 { 
+            font-size: 1.8rem; 
+            margin: 40px 0 20px;
+            color: #8b5cf6;
+        }
+        h3 { 
+            font-size: 1.3rem; 
+            margin: 30px 0 15px;
+            color: #a1a1aa;
+        }
+        p, li { color: #a1a1aa; margin-bottom: 10px; }
+        ul { margin-left: 20px; }
+        .highlight {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .step {
+            background: rgba(25, 25, 25, 0.6);
+            border-left: 4px solid #8b5cf6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        code {
+            background: #1a1a1a;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #8b5cf6;
+            font-family: 'Courier New', monospace;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 10px 10px 0;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .emoji { font-size: 1.5em; margin-right: 10px; }
+        .checklist { list-style: none; }
+        .checklist li::before { 
+            content: "□ "; 
+            color: #8b5cf6; 
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Guía de Personalización del Portfolio</h1>
+        
+        <div class="highlight">
+            <p><strong>¡Bienvenido a tu nuevo portfolio!</strong></p>
+            <p>Esta guía te ayudará a personalizarlo paso a paso. Todo el código está comentado con marcadores 📝 donde debes hacer cambios.</p>
+        </div>
+
+        <h2>📋 Pasos Rápidos</h2>
+
+        <div class="step">
+            <h3><span class="emoji">1️⃣</span>Información Personal</h3>
+            <p>Abre <code>index.html</code> y busca todos los comentarios que empiecen con <code>&lt;!-- 📝 REEMPLAZAR:</code></p>
+            <ul>
+                <li><strong>Hero Section:</strong> Tu nombre, título y descripción</li>
+                <li><strong>About:</strong> Tu historia personal</li>
+                <li><strong>Redes Sociales:</strong> Enlaces a GitHub, LinkedIn, Twitter, etc.</li>
+                <li><strong>Contacto:</strong> Email, teléfono, ubicación</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><span class="emoji">2️⃣</span>Añadir tu Foto</h3>
+            <p>Coloca tu foto de perfil en <code>assets/profile.jpg</code> (recomendado: 800x800px)</p>
+            <p>Luego descomenta estas líneas en <code>index.html</code> (sección About):</p>
+            <code>&lt;img src="assets/profile.jpg" alt="Tu Nombre" class="about-image"&gt;</code>
+        </div>
+
+        <div class="step">
+            <h3><span class="emoji">3️⃣</span>Añadir tus Skills</h3>
+            <p>Edita la sección de Skills en <code>index.html</code>:</p>
+            <ul>
+                <li>Puedes mantener las skills de ejemplo o reemplazarlas</li>
+                <li>Obtén iconos SVG de <a href="https://simpleicons.org/" style="color: #8b5cf6;">simpleicons.org</a></li>
+                <li>Copia el código SVG y reemplaza el contenido dentro de <code>&lt;svg&gt;...&lt;/svg&gt;</code></li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><span class="emoji">4️⃣</span>Añadir Proyectos</h3>
+            <p>Para cada proyecto:</p>
+            <ol>
+                <li>Guarda screenshots en <code>assets/project-1.jpg</code>, etc.</li>
+                <li>Actualiza título, descripción y tags</li>
+                <li>Añade enlaces a demo y código</li>
+                <li>Descomenta la línea de imagen y actualiza la ruta</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3><span class="emoji">5️⃣</span>Configurar Formulario (Opcional)</h3>
+            <p>El formulario necesita un backend. Opciones fáciles:</p>
+            <ul>
+                <li><strong>Formspree:</strong> Gratis, sin código. Visita <a href="https://formspree.io" style="color: #8b5cf6;">formspree.io</a></li>
+                <li><strong>EmailJS:</strong> Gratis, requiere configuración en JS. Visita <a href="https://www.emailjs.com/" style="color: #8b5cf6;">emailjs.com</a></li>
+            </ul>
+            <p>Instrucciones detalladas en <code>js/main.js</code> línea 227.</p>
+        </div>
+
+        <div class="step">
+            <h3><span class="emoji">6️⃣</span>Personalizar Colores (Opcional)</h3>
+            <p>Abre <code>css/style.css</code> y edita las variables al inicio del archivo:</p>
+            <ul>
+                <li><code>--color-accent-1</code>: Color principal (#8b5cf6)</li>
+                <li><code>--color-accent-2</code>: Color secundario (#6366f1)</li>
+                <li><code>--color-accent-3</code>: Color terciario (#3b82f6)</li>
+            </ul>
+        </div>
+
+        <h2>✅ Checklist de Personalización</h2>
+        <ul class="checklist">
+            <li>Cambiar nombre y título en Hero</li>
+            <li>Actualizar descripción personal</li>
+            <li>Añadir foto de perfil</li>
+            <li>Actualizar skills con tus tecnologías</li>
+            <li>Añadir tus proyectos reales</li>
+            <li>Configurar enlaces de redes sociales (al menos 3)</li>
+            <li>Actualizar información de contacto</li>
+            <li>Configurar formulario de contacto (opcional)</li>
+            <li>Añadir favicon en <code>&lt;head&gt;</code></li>
+            <li>Probar en móvil y desktop</li>
+            <li>Verificar todos los enlaces</li>
+            <li>Optimizar imágenes antes de subir</li>
+        </ul>
+
+        <h2>🚀 Cómo Ver tu Portfolio</h2>
+        <div class="highlight">
+            <p><strong>Opción Simple:</strong> Haz doble clic en <code>index.html</code></p>
+            <p><strong>Opción Profesional:</strong> Usa un servidor local:</p>
+            <ul>
+                <li>Python: <code>python -m http.server 8000</code></li>
+                <li>Node: <code>npx serve</code></li>
+                <li>VS Code: Extensión "Live Server"</li>
+            </ul>
+        </div>
+
+        <h2>🌐 Desplegar en Internet</h2>
+        <p>Opciones gratuitas y fáciles:</p>
+        <a href="https://vercel.com" class="btn">Vercel (Recomendado)</a>
+        <a href="https://www.netlify.com" class="btn">Netlify</a>
+        <a href="https://pages.github.com" class="btn">GitHub Pages</a>
+
+        <h2>🆘 ¿Necesitas Ayuda?</h2>
+        <ul>
+            <li>Lee el archivo <code>README.md</code> para más detalles</li>
+            <li>Todos los archivos tienen comentarios explicativos</li>
+            <li>Busca <code>📝</code> en el código para encontrar qué cambiar</li>
+            <li>Abre la consola del navegador (F12) para ver errores</li>
+        </ul>
+
+        <div class="highlight" style="margin-top: 40px;">
+            <p><strong>💡 Consejo Final:</strong></p>
+            <p>No intentes personalizarlo todo de una vez. Empieza con lo básico (nombre, foto, 2-3 proyectos) y ve añadiendo más contenido gradualmente.</p>
+        </div>
+
+        <p style="text-align: center; margin-top: 60px; color: #71717a;">
+            ¡Éxito con tu portfolio! 🚀
+        </p>
+    </div>
+</body>
+</html>
+
