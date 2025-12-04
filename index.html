@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Leonardo</title>
+    <title>Leonardo Guevara</title>
+    <link rel="icon" type="image/x-icon" href="assets\leo_1.png">
     <meta name="description" content="Software Engineering Portfolio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
 <body>
     <nav class="navbar-hero" id="navbarHero">
         <div class="navbar-hero-profile">
-            <img src="./assets/senku.jpg" alt="Profile" class="navbar-hero-profile-img">
+            <img src="./assets/leo.jpg" alt="Profile" class="navbar-hero-profile-img">
         </div>
         
         <a href="#hero" class="navbar-hero-link">Home</a>
@@ -73,8 +74,8 @@
         <div class="container">
             <h2 class="section-title">Who I Am</h2><br><br>
             
-            <div class="about-text-only" style="text-align: center">
-                <p class="about-paragraph about-greeting">Hi, I'm <span class="name-highlight">Leonardo</span>. A fourth-year Software Engineering student with a strong <strong>backend engineering</strong> focus, building data‑intensive systems and production‑ready, <strong>scalable software</strong>.<br><br>During my university training I have specialize in Object‑Oriented Programming, clean architecture, and infrastructure‑aware development. I follow <strong>Clean Code</strong> principles, apply Design Patterns, and tradeoff‑driven system design. I work with ML tooling and maintain an active <a href="https://github.com/LeonardoG2005" target="_blank" rel="noopener noreferrer">GitHub</a> profile, including production deployments.<br><br>My foundations span <strong>Core CS &amp; Software Engineering</strong> (advanced algorithms, dynamic data structures, systems programming, web &amp; mobile engineering, testing, security), <strong>Mathematics &amp; Problem‑Solving</strong> (Discrete Math, Linear Algebra, calculus), and <strong>Architecture &amp; Infrastructure</strong> (computer architecture, IP networking, DevOps‑aligned delivery). I’ve also developed practical <strong>Project &amp; Product</strong> skills for technical evaluation, software design, and structured delivery cycles.<br><br> I also pursued the full <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener noreferrer">DeepLearning.AI Machine Learning Specialization</a> on <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener noreferrer">Coursera</a> and hold an <a href="https://www.linkedin.com/in/leotuvstarr/details/certifications/1764033906764/single-media-viewer/" target="_blank" rel="noopener noreferrer">IELTS Academic</a> certification validating C1 English proficiency.<br><br> Right now, I’m working with a team on a 2D open‑world multiplayer project in Unity &amp; C#. Our idea is to create a fun environment where players learn languages while we gain experience shipping, deploying, and maintaining a real long-term software project from scratch.</p>
+            <div class="about-text-only" style="text-align: justify;" align="justify">
+                <p class="about-paragraph about-greeting">Hi, I'm <span class="name-highlight">Leonardo</span>. A fourth-year Software Engineering student with a strong <strong>backend engineering</strong> focus, building data‑intensive systems and production‑ready, <strong>scalable software</strong>.<br><br>During my university training I have specialize in Object‑Oriented Programming, clean architecture, and infrastructure‑aware development. I follow <strong>Clean Code</strong> principles, apply Design Patterns, and tradeoff‑driven system design. I work with ML tooling and maintain an active <a href="https://github.com/LeonardoG2005" target="_blank" rel="noopener noreferrer">GitHub</a> profile, including production deployments.<br><br>My foundations span <strong>Core CS &amp; Software Engineering</strong> (advanced algorithms, dynamic data structures, systems programming, web &amp; mobile engineering, testing, security), <strong>Mathematics &amp; Problem‑Solving</strong> (Discrete Math, Linear Algebra, calculus), and <strong>Architecture &amp; Infrastructure</strong> (computer architecture, IP networking, DevOps‑aligned delivery). I’ve also developed practical <strong>Project &amp; Product</strong> skills for technical evaluation, software design, and structured delivery cycles.<br><br> I also pursued the full <a href="https://www.linkedin.com/in/leotuvstarr/details/certifications/" target="_blank" rel="noopener noreferrer">DeepLearning.AI Machine Learning Specialization</a> on <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener noreferrer">Coursera</a> and hold an <a href="https://www.linkedin.com/in/leotuvstarr/details/certifications/1764033906764/single-media-viewer/" target="_blank" rel="noopener noreferrer">IELTS Academic</a> certification validating C1 English proficiency.<br><br> Right now, I’m working with a team on a <a href="https://github.com/LeonardoG2005/Juego-De-Idiomas" target="_blank" rel="noopener noreferrer">2D open‑world multiplayer project in Unity &amp; C#</a>. Our idea is to create a fun environment where players learn languages while we gain experience shipping, deploying, and maintaining a real long-term software project from scratch.</p>
             </div>
         </div>
     </section>
@@ -218,22 +219,14 @@
             <h2 class="section-title">Projects</h2>
             <p class="section-subtitle">Demos desplegados de aplicaciones web completas</p>
             <div class="projects-gallery">
-                <a href="https://proyecto-demo.com" target="_blank" rel="noopener noreferrer" class="project-card">
+                <a href="#" class="project-card" onclick="openErgonominadorModal(event)">
                     <div class="project-image-container">
-                        <img src="assets/project-1.jpg" alt="Nombre del Proyecto" class="project-image">
-                        <div class="project-image-placeholder">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                <line x1="8" y1="21" x2="16" y2="21"/>
-                                <line x1="12" y1="17" x2="12" y2="21"/>
-                            </svg>
-                            <p>Screenshot del proyecto</p>
-                        </div>
+                        <img src="./assets/proyectoErgonominador.png" alt="Ergonominador" class="project-image">
                     </div>
                     <div class="project-meta">
-                        <h3 class="project-title">Nombre del Proyecto</h3>
+                        <h3 class="project-title">Ergonominador - IoT Monitoring System</h3>
                         <p class="project-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Django-based IoT system integrating MQTT sensors to monitor ergonomic workspace conditions in real-time.
                         </p>
                     </div>
                 </a>
@@ -351,6 +344,113 @@
         </div>
     </section>
     </div>
+
+    <div id="ergonominadorModal" class="project-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeErgonominadorModal()">&times;</span>
+            <h2 class="modal-title">Ergonominador - Sistema de Monitoreo Ergonómico IoT</h2>
+            
+            <div class="modal-body">
+                <p class="modal-intro">
+                    <strong>Full documentation:</strong> 
+                    <a href="https://ergonominador.vercel.app/pages/documentation/" target="_blank" rel="noopener noreferrer">
+                        https://ergonominador.vercel.app/pages/documentation/
+                    </a>
+                </p>
+
+                <div class="modal-demo-link">
+                    <a href="https://ergonominador.vercel.app/" target="_blank" rel="noopener noreferrer" class="demo-button">
+                        <img src="./assets/proyectoErgonominador.png" alt="Ergonominador Demo" class="modal-demo-image">
+                        <span class="demo-overlay">View Live Demo →</span>
+                    </a>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Overview</h3>
+                    <p>Django system integrating IoT sensors via MQTT to monitor ergonomic workspace conditions. Architecture follows: <strong>Hardware → MQTT Broker → Django Backend → Frontend Dashboard</strong>.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><a href="https://github.com/LeonardoG2005" target="_blank">Leonardo Guevara</a></li>
+                        <li><a href="https://github.com/PholCast" target="_blank">Phol Castañeda</a></li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Backend:</strong> Django 5.1.2 + SQLite</li>
+                        <li><strong>IoT Communication:</strong> MQTT (Paho-MQTT + HiveMQ Cloud)</li>
+                        <li><strong>Frontend:</strong> jQuery + Chart.js + Bootstrap 4</li>
+                        <li><strong>Hardware:</strong> ESP32 + MicroPython</li>
+                        <li><strong>Sensors:</strong> LM35DZ (temperature), HC-SR04 (ultrasound), LDR (light)</li>
+                        <li><strong>Protocol:</strong> MQTT over TLS (port 8883)</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Key Components</h3>
+                    
+                    <h4>MQTT Client</h4>
+                    <p>Permanent subscription to topics, sensor data reception, and database persistence. Auto-starts in Django deployment via daemon thread.</p>
+                    <p><strong>Subscribed Topics:</strong></p>
+                    <ul>
+                        <li><code>sensorsPHOLLEO/{temp|sonido|luz}</code> - Sensor readings</li>
+                        <li><code>alertPHOLLEO/{distancia|temp|luz}</code> - Hardware-generated alerts</li>
+                        <li><code>alertPHOLLEO/postura/{Verde|Amarillo|Rojo}</code> - Posture traffic light states</li>
+                    </ul>
+
+                    <h4>Data Models</h4>
+                    <ul>
+                        <li><strong>SensorTemp/SensorSonido/SensorLuz:</strong> Store historical readings (value + timestamp)</li>
+                        <li><strong>Alert:</strong> Notifications classified by type with seen flag</li>
+                        <li><strong>Postura:</strong> Records time in each traffic light state</li>
+                    </ul>
+
+                    <h4>REST API</h4>
+                    <ul>
+                        <li><code>/get-alerts/</code> - Returns latest unseen alert by type + current traffic light state</li>
+                        <li><code>/get-sensor-data/</code> - Last 5 minutes data + time aggregates by traffic light color</li>
+                        <li><code>/sensors_view/</code> - Real-time dashboard with Chart.js graphs (5s polling)</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>IoT Flow</h3>
+                    <p><strong>Hardware → Backend:</strong></p>
+                    <ol>
+                        <li>Physical sensors (temperature, ultrasound, photoresistor) connected to microcontroller</li>
+                        <li>Microcontroller publishes data via WiFi to public MQTT broker (HiveMQ)</li>
+                        <li>Django backend receives messages in real-time and stores in SQLite</li>
+                        <li>Frontend queries API via polling and visualizes historical data</li>
+                    </ol>
+
+                    <p><strong>Traffic Light System (2 LEDs):</strong></p>
+                    <p>Hardware measures screen distance with ultrasonic sensor. Based on time in adequate/inadequate posture, activates indicator LEDs:</p>
+                    <ul>
+                        <li><strong>Green LED:</strong> Correct posture (>50cm distance)</li>
+                        <li><strong>Yellow LED:</strong> Preventive warning (40-50cm or approaching time limit)</li>
+                        <li><strong>Red LED:</strong> Incorrect posture (<40cm)</li>
+                    </ul>
+                    <p>Dashboard shows time proportion in each state via donut chart for posture habit analysis.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Main Endpoints</h3>
+                    <ul>
+                        <li><code>http://localhost:8000/</code> - Main page</li>
+                        <li><code>http://localhost:8000/sensors_view/</code> - Dashboard with graphs</li>
+                        <li><code>http://localhost:8000/pages/documentation/</code> - Technical documentation</li>
+                        <li><code>http://localhost:8000/get-alerts/</code> - Alerts API</li>
+                        <li><code>http://localhost:8000/get-sensor-data/</code> - Sensor data API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>

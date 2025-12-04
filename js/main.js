@@ -348,3 +348,32 @@ class App {
 }
 
 new App();
+
+function openErgonominadorModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('ergonominadorModal');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeErgonominadorModal() {
+    const modal = document.getElementById('ergonominadorModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('ergonominadorModal');
+    if (event.target === modal) {
+        closeErgonominadorModal();
+    }
+}
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const modal = document.getElementById('ergonominadorModal');
+        if (modal.classList.contains('active')) {
+            closeErgonominadorModal();
+        }
+    }
+});
