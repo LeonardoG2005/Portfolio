@@ -362,18 +362,43 @@ function closeErgonominadorModal() {
     document.body.style.overflow = 'auto';
 }
 
+function openFocusHubModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('focusHubModal');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFocusHubModal() {
+    const modal = document.getElementById('focusHubModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
 window.onclick = function(event) {
-    const modal = document.getElementById('ergonominadorModal');
-    if (event.target === modal) {
+    const ergonominadorModal = document.getElementById('ergonominadorModal');
+    const focusHubModal = document.getElementById('focusHubModal');
+
+    if (event.target === ergonominadorModal) {
         closeErgonominadorModal();
+    }
+
+    if (event.target === focusHubModal) {
+        closeFocusHubModal();
     }
 }
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
-        const modal = document.getElementById('ergonominadorModal');
-        if (modal.classList.contains('active')) {
+        const ergonominadorModal = document.getElementById('ergonominadorModal');
+        const focusHubModal = document.getElementById('focusHubModal');
+
+        if (ergonominadorModal.classList.contains('active')) {
             closeErgonominadorModal();
+        }
+
+        if (focusHubModal.classList.contains('active')) {
+            closeFocusHubModal();
         }
     }
 });

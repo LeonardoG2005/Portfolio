@@ -340,6 +340,17 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
+                <a href="#" class="project-card" onclick="openFocusHubModal(event)">
+                    <div class="project-image-container">
+                        <img src="./assets/proyectoFocusHub.jpg" alt="FocusHub" class="project-image">
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">FocusHub - Productivity Management Platform</h3>
+                        <p class="project-description">
+                            Monorepo with Angular 19 frontend and NestJS 11 backend for productivity workflows: tasks, calendar, focus sessions, techniques, stats, and JWT authentication.
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -445,6 +456,111 @@
                         <li><code>http://localhost:8000/pages/documentation/</code> - Technical documentation</li>
                         <li><code>http://localhost:8000/get-alerts/</code> - Alerts API</li>
                         <li><code>http://localhost:8000/get-sensor-data/</code> - Sensor data API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="focusHubModal" class="project-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeFocusHubModal()">&times;</span>
+            <h2 class="modal-title">FocusHub – Productivity Management Platform</h2>
+
+            <div class="modal-body">
+                <p class="modal-intro">
+                    <strong>Link to the Repository:</strong>
+                    <a href="https://github.com/LeonardoG2005/FocusHub" target="_blank" rel="noopener noreferrer">
+                        https://github.com/LeonardoG2005/FocusHub
+                    </a>
+                </p>
+
+                <div class="modal-demo-link">
+                    <a href="https://focushub-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="demo-button">
+                        <img src="./assets/proyectoFocusHub.jpg" alt="FocusHub Demo" class="modal-demo-image">
+                        <span class="demo-overlay">View Live Demo →</span>
+                    </a>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Overview</h3>
+                    <p>FocusHub is a productivity monorepo combining an Angular 19 frontend and a NestJS 11 backend. It covers task management, calendar planning, concentration techniques, focus sessions, productivity analytics, and JWT authentication in a single integrated platform.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><a href="https://github.com/LeonardoG2005" target="_blank" rel="noopener noreferrer">Leonardo Guevara</a></li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> Angular 19 (standalone components + signals)</li>
+                        <li><strong>Backend:</strong> NestJS 11 + TypeORM</li>
+                        <li><strong>Database (main branch):</strong> SQLite local database (<code>focushub.db</code>)</li>
+                        <li><strong>Authentication:</strong> JWT with guard-protected routes and endpoints</li>
+                        <li><strong>Optional Orchestration:</strong> Docker Compose with frontend, backend, MySQL, and ELK</li>
+                        <li><strong>Observability:</strong> ELK stack configuration (Elasticsearch, Logstash, Kibana)</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Key Components</h3>
+
+                    <h4>Frontend Modules (Angular)</h4>
+                    <ul>
+                        <li><strong>Routes:</strong> <code>/</code>, <code>/sign-up</code>, <code>/log-in</code>, <code>/tasks</code>, <code>/calendar</code>, <code>/techniques</code>, <code>/stats</code></li>
+                        <li><strong>AuthService + TokenService:</strong> Registration/login/logout and JWT lifecycle in localStorage</li>
+                        <li><strong>TaskService + EventService:</strong> CRUD operations with reactive UI state</li>
+                        <li><strong>TechniqueService:</strong> Focus timer, active session recovery, and task association per focus session</li>
+                        <li><strong>StatsService:</strong> Productivity statistics consumption for the analytics views</li>
+                    </ul>
+
+                    <h4>Backend Modules (NestJS)</h4>
+                    <ul>
+                        <li><code>auth</code>, <code>users</code>, <code>tasks</code>, <code>events</code>, <code>categories</code>, <code>productivity</code>, <code>ambient-sound</code>, <code>reminders</code></li>
+                        <li><strong>Swagger Docs:</strong> API documentation exposed at <code>/api</code></li>
+                        <li><strong>Persistence:</strong> TypeORM configured for SQLite in the main branch</li>
+                    </ul>
+
+                    <h4>Repository Structure</h4>
+                    <ul>
+                        <li><code>FocusHub-app/</code> - Angular frontend</li>
+                        <li><code>focus-hub-backend/</code> - NestJS backend</li>
+                        <li><code>elk/</code> - Logstash/ELK configuration</li>
+                        <li><code>docker-compose.yml</code> - Multi-service orchestration</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Architecture Flow</h3>
+                    <p><strong>User Workflow:</strong></p>
+                    <ol>
+                        <li>Users register or log in and receive JWT credentials</li>
+                        <li>Frontend sends authenticated requests to protected API modules</li>
+                        <li>Backend modules process tasks, events, categories, and productivity entities</li>
+                        <li>TypeORM persists data in SQLite (main setup) and serves analytics endpoints</li>
+                        <li>Statistics and active focus session state feed the productivity dashboards</li>
+                    </ol>
+
+                    <p><strong>Execution Modes:</strong></p>
+                    <ul>
+                        <li><strong>Local:</strong> Backend on <code>http://localhost:3000</code> and frontend on <code>http://localhost:4200</code></li>
+                        <li><strong>Containerized:</strong> Docker Compose can run frontend, backend, MySQL, and ELK services together</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Main Endpoints</h3>
+                    <ul>
+                        <li><code>POST /auth/register</code> and <code>POST /auth/login</code> - Authentication</li>
+                        <li><code>GET /users/me</code> - Current authenticated user</li>
+                        <li><code>POST/GET/PATCH/DELETE /tasks</code> - Task management</li>
+                        <li><code>POST/GET/PUT/DELETE /events</code> and <code>GET /events/by-date</code> - Calendar events</li>
+                        <li><code>GET /productivity/stats</code> - Productivity analytics</li>
+                        <li><code>GET /api</code> - Swagger API docs</li>
                     </ul>
                 </div>
             </div>
