@@ -434,8 +434,8 @@ a {
 }
 
 .social-circle-btn {
-    width: 68px;
-    height: 68px;
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -494,6 +494,8 @@ a {
     position: relative;
     z-index: 1;
     transition: all var(--transition);
+    width: 26px;
+    height: 26px;
 }
 
 .social-circle-btn:hover svg {
@@ -503,13 +505,13 @@ a {
 
 @media (max-width: 768px) {
     .social-circle-btn {
-        width: 56px;
-        height: 56px;
+        width: 60px;
+        height: 60px;
     }
     
     .social-circle-btn svg {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
 }
 
@@ -728,6 +730,13 @@ section {
 .skill-icon svg {
     width: 100%;
     height: 100%;
+}
+
+/* Center a single skill card on its own row */
+.skills-grid .centered {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 220px;
 }
 
 .skill-name {
