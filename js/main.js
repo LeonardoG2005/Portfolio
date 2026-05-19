@@ -375,9 +375,23 @@ function closeFocusHubModal() {
     document.body.style.overflow = 'auto';
 }
 
+function openFluxLabModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('fluxLabModal');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFluxLabModal() {
+    const modal = document.getElementById('fluxLabModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
 window.onclick = function(event) {
     const ergonominadorModal = document.getElementById('ergonominadorModal');
     const focusHubModal = document.getElementById('focusHubModal');
+    const fluxLabModal = document.getElementById('fluxLabModal');
 
     if (event.target === ergonominadorModal) {
         closeErgonominadorModal();
@@ -386,12 +400,17 @@ window.onclick = function(event) {
     if (event.target === focusHubModal) {
         closeFocusHubModal();
     }
+
+    if (event.target === fluxLabModal) {
+        closeFluxLabModal();
+    }
 }
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         const ergonominadorModal = document.getElementById('ergonominadorModal');
         const focusHubModal = document.getElementById('focusHubModal');
+        const fluxLabModal = document.getElementById('fluxLabModal');
 
         if (ergonominadorModal.classList.contains('active')) {
             closeErgonominadorModal();
@@ -399,6 +418,10 @@ document.addEventListener('keydown', function(event) {
 
         if (focusHubModal.classList.contains('active')) {
             closeFocusHubModal();
+        }
+
+        if (fluxLabModal.classList.contains('active')) {
+            closeFluxLabModal();
         }
     }
 });
