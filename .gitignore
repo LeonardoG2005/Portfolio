@@ -37,6 +37,7 @@ temp/
 # Archivos personales de configuración
 config.js
 !config.example.js
+config.example.js
 
 # Backups
 *.backup

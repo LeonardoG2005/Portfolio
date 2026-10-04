@@ -52,14 +52,14 @@ Luego visita: `http://localhost:8000`
 portfolio/
 ├── index.html          # Estructura HTML principal
 ├── css/
-│   └── style.css      # Estilos completos con sistema de diseño
+│   └── style.css      # Estilos completos
 ├── js/
 │   └── main.js        # JavaScript para interactividad
 ├── assets/            # Recursos (imágenes, logos, etc.)
-│   ├── profile.jpg    # 📝 Tu foto de perfil
-│   ├── project-1.jpg  # 📝 Screenshots de proyectos
-│   ├── favicon.svg    # 📝 Tu favicon
-│   └── logos/         # 📝 Logos de tecnologías
+│   ├── profile.jpg    
+│   ├── project-1.jpg  
+│   ├── favicon.svg    
+│   └── logos/         
 └── README.md          # Este archivo
 ```
 
@@ -69,11 +69,9 @@ Edita las variables CSS en `css/style.css` (líneas 10-80):
 
 ```css
 :root {
-    /* Cambia estos valores para personalizar los colores */
     --color-accent-1: #8b5cf6;  /* Color principal */
     --color-accent-2: #6366f1;  /* Color secundario */
     --color-accent-3: #3b82f6;  /* Color terciario */
-    /* ... más variables ... */
 }
 ```
 
