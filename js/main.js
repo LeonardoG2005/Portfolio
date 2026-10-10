@@ -231,29 +231,29 @@ class LanguageSwitcher {
                 'nav.home': 'Inicio', 'nav.about': '¿Quién soy?', 'nav.skills': '¿Qué hago?', 'nav.projects': 'Proyectos', 'nav.talk': 'Contáctame',
                 'hero.available': 'Disponible para trabajar', 'hero.greeting': 'Hola, soy', 'hero.role': 'Y soy un ingeniero de software',
                 'section.about': '¿Quién soy?', 'section.skills': '¿Qué hago?', 'section.projects': 'Proyectos', 'projects.subtitle': 'Demos de aplicaciones desplegadas',
-                'projects.focushub.title': 'FocusHub - Plataforma de gestión de productividad',
+                'projects.focushub.title': 'FocusHub : Plataforma de gestión de productividad',
                 'projects.focushub.desc': 'Monorepo con frontend en Angular 19 y backend en NestJS 11 para flujos de productividad: tareas, calendario, sesiones de enfoque, técnicas, estadísticas y autenticación JWT.',
-                'projects.fluxlab.title': 'FluxLab - Plataforma web LIMS',
+                'projects.fluxlab.title': 'FluxLab : Plataforma web LIMS',
                 'projects.fluxlab.desc': 'LIMS web para laboratorios de biotecnología ambiental que centraliza muestras, resultados y reportes automatizados.',
-                'projects.ergonominador.title': 'Ergonominador - Sistema de monitoreo IoT',
+                'projects.ergonominador.title': 'Ergonominador : Sistema de monitoreo IoT',
                 'projects.ergonominador.desc': 'Sistema IoT basado en Django que integra sensores MQTT para monitorear en tiempo real las condiciones ergonómicas del puesto de trabajo.',
-                'footer.made': 'Hecho con', 'footer.by': 'por Leo'
+                'footer.made': 'Made with', 'footer.by': 'by Leo'
             },
             en: {
-                'nav.home': 'Home', 'nav.about': 'Who I Am', 'nav.skills': 'What I Can Do', 'nav.projects': 'Projects', 'nav.talk': "Let's talk",
+                'nav.home': 'Home', 'nav.about': 'About', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.talk': "Contact",
                 'hero.available': 'Available for work', 'hero.greeting': 'Hi there, I\'m', 'hero.role': 'And I\'m a software engineer',
-                'section.about': 'Who I Am', 'section.skills': 'What I Can Do', 'section.projects': 'Projects', 'projects.subtitle': 'Deployed Application Demos',
-                'projects.focushub.title': 'FocusHub - Productivity Management Platform',
+                'section.about': 'About', 'section.skills': 'Skills', 'section.projects': 'Projects', 'projects.subtitle': 'Deployed Application Demos',
+                'projects.focushub.title': 'FocusHub : Productivity Management Platform',
                 'projects.focushub.desc': 'Monorepo with Angular 19 frontend and NestJS 11 backend for productivity workflows: tasks, calendar, focus sessions, techniques, stats, and JWT authentication.',
-                'projects.fluxlab.title': 'FluxLab - LIMS Web Platform',
+                'projects.fluxlab.title': 'FluxLab : LIMS Web Platform',
                 'projects.fluxlab.desc': 'Web-based LIMS for environmental biotechnology labs, centralizing samples, results, and automated reporting.',
-                'projects.ergonominador.title': 'Ergonominador - IoT Monitoring System',
+                'projects.ergonominador.title': 'Ergonominador : IoT Monitoring System',
                 'projects.ergonominador.desc': 'Django-based IoT system integrating MQTT sensors to monitor ergonomic workspace conditions in real-time.',
                 'footer.made': 'Made with', 'footer.by': 'by Leo'
             }
         };
         this.modalTranslations = {
-            'Ergonominador – IoT Ergonomic Monitoring System': 'Ergonominador – Sistema de Monitoreo Ergonómico IoT',
+            'Ergonominador : IoT Ergonomic Monitoring System': 'Ergonominador :Sistema de Monitoreo Ergonómico IoT',
             'Full documentation:': 'Documentación completa:',
             'View Live Demo →': 'Ver demo en vivo →',
             'Overview': 'Descripción general',
@@ -302,7 +302,7 @@ class LanguageSwitcher {
             'Green LED:': 'LED verde:',
             'Correct posture (>50cm distance)': 'Postura correcta (distancia >50 cm)',
             'Yellow LED:': 'LED amarillo:',
-            'Preventive warning (40-50cm or approaching time limit)': 'Advertencia preventiva (40–50 cm o acercándose al límite de tiempo)',
+            'Preventive warning (40-50cm or approaching time limit)': 'Advertencia preventiva (40-50 cm o acercándose al límite de tiempo)',
             'Red LED:': 'LED rojo:',
             'Incorrect posture (<40cm)': 'Postura incorrecta (<40 cm)',
             'Dashboard shows time proportion in each state via donut chart for posture habit analysis.': 'El dashboard muestra la proporción de tiempo en cada estado mediante un gráfico de dona para analizar los hábitos posturales.',
@@ -313,7 +313,7 @@ class LanguageSwitcher {
             '- Alerts API': '- API de alertas',
             '- Sensor data API': '- API de datos de sensores',
 
-            'FocusHub – Productivity Management Platform': 'FocusHub – Plataforma de Gestión de Productividad',
+            'FocusHub : Productivity Management Platform': 'FocusHub :Plataforma de Gestión de Productividad',
             'Link to the Repository:': 'Enlace al repositorio:',
             'FocusHub is a productivity monorepo combining an Angular 19 frontend and a NestJS 11 backend. It covers task management, calendar planning, concentration techniques, focus sessions, productivity analytics, and JWT authentication in a single integrated platform.': 'FocusHub es un monorepo de productividad que combina un frontend en Angular 19 y un backend en NestJS 11. Incluye gestión de tareas, planificación de calendario, técnicas de concentración, sesiones de enfoque, analítica de productividad y autenticación JWT en una sola plataforma integrada.',
             'Frontend Modules (Angular)': 'Módulos del frontend (Angular)',
@@ -360,7 +360,7 @@ class LanguageSwitcher {
             '- Productivity analytics': '- Analítica de productividad',
             '- Swagger API docs': '- Documentación Swagger de la API',
 
-            'FluxLab – LIMS for Environmental Biotech Labs': 'FluxLab – LIMS para Laboratorios de Biotecnología Ambiental',
+            'FluxLab : LIMS for Environmental Biotech Labs': 'FluxLab :LIMS para Laboratorios de Biotecnología Ambiental',
             'Live demo:': 'Demo en vivo:',
             'Admin access:': 'Acceso de administrador:',
             'Use': 'Usa',

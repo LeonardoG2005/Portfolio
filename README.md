@@ -85,7 +85,7 @@ El portfolio usa:
 ## Secciones del Portfolio
 
 1. **Hero/Main**: Presentación con botones sociales circulares
-2. **Who I Am**: Historia personal con foto
+2. **About**: Historia personal con foto
 3. **Skills**: Grid de tecnologías con iconos
 4. **Proyectos Web**: Cards grandes para demos desplegados
 5. **Beyond Web**: Otros trabajos y proyectos creativos

@@ -93,7 +93,6 @@ a {
 .about-paragraph a {
     color: var(--color-accent-purple);
     font-weight: 700;
-    text-decoration: underline;
     text-decoration-color: rgba(139, 92, 246, 0.45);
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
